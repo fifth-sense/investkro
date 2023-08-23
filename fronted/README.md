@@ -1,0 +1,1 @@
+Parcel is a "Blazing fast, zero configuration web application bundler.
