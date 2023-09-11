@@ -2,7 +2,7 @@
 //The useMemo Hook only runs when one of its dependencies update.
 //This can improve performance.
 
-import React,{ useState} from "react";
+import React,{ useState, useCallback} from "react";
 
 const ExpensiveCalculation = (num)=>{
     console.log("calculating...")
@@ -16,7 +16,7 @@ const UseMemoExample = () => {
 
     const [todos, setTodos] = useState([]);
     const [counter, setCounter] = useState(0);
-    const calculation = ExpensiveCalculation(counter)
+    const calculation = useCallback(ExpensiveCalculation(counter), [counter])
 
     const addTodo = () => {
         setTodos((t=> [...t, "New Todo" ]));
