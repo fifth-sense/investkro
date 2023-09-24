@@ -9,6 +9,7 @@ import EventExample from './interview/Synthetic events';
 import CounterExample from './interview/Performance-enhance/reactPureComponent';
 import MyComponent from './interview/errorBoundary';
 import Parent from './interview/prop-drilling';
+import ParentComponent from './interview/child-to-parent-data-pass';
 
 
 const App = () => {
@@ -17,7 +18,8 @@ const App = () => {
         <h1>hello</h1>
         {/* <MyComponent/> */}
         {/* <UseMemoExample/> */}
-        <Parent/>
+        {/* <Parent/> */}
+        <ParentComponent/>
         </>
      )
 }
