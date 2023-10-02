@@ -10,9 +10,38 @@ import CounterExample from './interview/Performance-enhance/reactPureComponent';
 import MyComponent from './interview/errorBoundary';
 import Parent from './interview/prop-drilling';
 import ParentComponent from './interview/child-to-parent-data-pass';
+import axios from 'axios';
 
-
+// make an API call post images and general data 
+//
 const App = () => {
+    let url = "https://fetchdata";
+    let image = "https://imageurl";
+
+    useEffect(()=>{
+       try{
+        const res = axios.post(url,  {
+            image: image,
+            name: "avatar", 
+            type: "png", 
+
+        }, {"content-type": "multipart/form-data"} ).then(res=> console.log(res))
+
+       }catch(e){
+        console.log(e)
+       }
+      
+
+
+    }, []);
+
+
+    //how to get the length ogf an object
+    let obj = {
+        a: 1
+    }
+
+
     return (
         <>
         <h1>hello</h1>
