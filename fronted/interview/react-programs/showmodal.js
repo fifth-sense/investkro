@@ -1,27 +1,6 @@
-// import React, {useState, useEffect, useMemo, memo, useCallback} from 'react'
 
-// import Counter from './pages/counter';
-// import User from './pages/users';
-// import Example from '../fronted/interview/example';
-// import UseMemoExample from './interview/memoHook';
-// // import Parent from './interview/Performance-enhance/usingUseCallback-Memo';
-// import EventExample from './interview/Synthetic events';
-// import CounterExample from './interview/Performance-enhance/reactPureComponent';
-// import MyComponent from './interview/errorBoundary';
-// import Parent from './interview/prop-drilling';
-// import ParentComponent from './interview/child-to-parent-data-pass';
-// import axios from 'axios';
 
-// make an API call post images and general data
-//
-// const App = () => {
-
-//     return (
-//         <>
-
-//         </>
-//      )
-// }
+//Q.  fetch the list of users from given url and show it in list and on click of every item show the last name of crossponding element
 import { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 
@@ -60,7 +39,6 @@ function App() {
           </div>
         );
       })}
-      
       {showModal && (
         <CustomeModal isOpen={showModal} data={data} id={currItemIndex} />
       )}

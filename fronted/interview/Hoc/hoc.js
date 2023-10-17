@@ -13,7 +13,7 @@ const HOC = (OriginalCompoent, increaseCount) => {
          {...props}/>
     </>
    
-   }
+   } 
    return NewComponent;
 
 }
