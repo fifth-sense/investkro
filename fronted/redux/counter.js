@@ -35,7 +35,8 @@ To connect a React application with Redux, you'll typically need to follow these
    ```
 
 3. **Create Action Creators:**
-   Action creators are functions that create actions. Actions are objects that describe what happened in your application. You can dispatch actions to trigger state changes.
+   Action creators are functions that create actions. Actions are objects that describe what happened in your application. 
+   You can dispatch actions to trigger state changes.
 
    ```javascript
    // src/store/actions.js
